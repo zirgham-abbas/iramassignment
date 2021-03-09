@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <style type="text/css">
+    
+</style>
+<div class="container my-5 py-5 z-depth-1">
+  <section class=" text-center ">
+    <div class="row">
+      <div class="col-md-1 mb-4"></div>
+      <div class=" col-lg-6 col-md-5 mb-4  col-sm-12 mb-md-0">
+        <h3 class="font-weight-bold">Start your free trial</h3>
+        <p class="text-muted">One membership makes it easy to search and book in-studio classes, beauty appointments, recovery sessions and at-home workouts. No studio packs or multiple logins needed — manage all your reservations from one app.
+        </p>
+        <img src="img/1122.jpg" class="img-fluid" alt="">
+        <hr class="my-5">
+      </div>
+      <div class="col-lg-4 col-md-5 col-sm-12 ">
+        <div class="card right-box">
+          <div class=" text-center pricing-card d-flex align-items-center  py-3 px-3 rounded">
+            <div class="card-body">
+
+             <p class="right-head">POPULAR PLANS</p>
+             <div class="price pt-0">
+               <h2 class="number mb-0" style="
+               font-size: 65px;
+               font-weight: 800;
+               ">$0</h2>
+             </div>
+             <p class="">for 7 days</p>
+             <ul class="list-group list-group-flush">
+
+              <li  class="list-group-item" ><span><img src="img/muscles (1).png" class="icon-img img-fluid" alt=""></span>
+                <p class="tees">Take as many as <strong>4 classes</strong> in 7 days</p>
+              </li >
+              <li class="list-group-item"> <span><img src="img/date.png" class="icon-img img-fluid" alt="" style="
+              width: 100px;
+              "></span>
+              <p class="tees"> we'll remined <strong> 2 days before</strong> your triel end.</p>
+            </li>
+            <li  class="list-group-item">
+              <span><img src="img/unlock (1).png" height="60" class="icon-img img-fluid" alt="" style="
+              width: 93px;
+              "></span>
+              
+              <p class="tees">Yor are never locked in<strong> Cancel anytime.</strong> </p>
+            </li>
+          </ul>
+          <div class="buttn"> 
+            <form  name="form" action="assignment.html" method="post"  >
+              <div class="md-form mb-0">
+                <input type="text" id="email" name="email" class="form-control"  placeholder="Enter your email to get started" value="" required > 
+              </div>
+              <div id="error_message"> This Field is Required</div>
+              <br>
+              <a   type="submit" value="Continiue"  class="btn btn-primary btn-lg btn-block text-white  " onclick="return validateForm()">Continiue</a>
+              
+            </form>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1 mb-4"></div>
+</div>
+</section>
+</div>
+<div class="scroll-to-top " style="display: block;"><button type="button" class="btn btn-primary float-right text-white" style="border-radius: 40px; padding: 0px 15px 0px 15px;"><img src="img/speech-bubble.png" class=" img-fluid" alt="" style="
+padding: 9px;
+">Chat</button>
+</div>
+</body>
+</html>
+<script>
+  function validateForm() {
+    var email = document.forms["form"]["email"].value;
+    if (email == "" || email == null) {
+      document.getElementById('error_message').style.display="block";
+      $("#email").css({"border": "1px solid #f01c1c"});
+      return false;
+    }
+
+
+  }
+</script>
